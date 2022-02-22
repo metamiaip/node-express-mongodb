@@ -10,7 +10,18 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": null
+				"url": {
+					"raw": "http://localhost:3000/api/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"getAll"
+					]
+				}
 			},
 			"response": []
 		},
@@ -21,7 +32,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Mary Wong\",\r\n    \"age\": 40,\r\n    \"gender\": \"Female\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Jonathan Lau\",\r\n    \"age\": 42,\r\n    \"gender\": \"Male\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -49,7 +60,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/getOne/6215043a9d463bf66a74dea3",
+					"raw": "http://localhost:3000/api/getOne/621566a6c02a101c495fd818",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -58,7 +69,7 @@
 					"path": [
 						"api",
 						"getOne",
-						"6215043a9d463bf66a74dea3"
+						"621566a6c02a101c495fd818"
 					]
 				}
 			},
@@ -67,9 +78,30 @@
 		{
 			"name": "Update data",
 			"request": {
-				"method": "GET",
+				"method": "PATCH",
 				"header": [],
-				"url": null
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tom Lee\",\r\n    \"age\": 30,\r\n    \"gender\": \"Male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/update/621566a6c02a101c495fd818",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"update",
+						"621566a6c02a101c495fd818"
+					]
+				}
 			},
 			"response": []
 		},
@@ -79,7 +111,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/delete/6215043a9d463bf66a74dea3",
+					"raw": "http://localhost:3000/api/delete/621566a6c02a101c495fd818",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -88,7 +120,7 @@
 					"path": [
 						"api",
 						"delete",
-						"6215043a9d463bf66a74dea3"
+						"621566a6c02a101c495fd818"
 					]
 				}
 			},
